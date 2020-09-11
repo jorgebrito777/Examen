@@ -77,12 +77,10 @@ function ENDEDIDO_2_2() {
 
   // called when a message arrives
   function onMessageArrived(message) {
-	console.log(message.payloadString);
-	est1=(messae.payloadString)split(":")[0];
-	est2=(messae.payloadString).split(":")[1];
-	 
-	document.getElementById("respuesta").innerHTML = est1;
-	document.getElementById("respuest").innerHTML = est2;
+	text=(message.payloadString);
+	console.log(text)
+
+	document.getElementById("respuesta").innerHTML = text;
 
   
   }
