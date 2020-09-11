@@ -82,7 +82,7 @@ function ENDEDIDO_2_2() {
 	est2=(messae.payloadString).split(":")[1];
 	 
 	document.getElementById("respuesta").innerHTML = est1;
-	document.getElementById("respuesta2").innerHTML = est2;
+	document.getElementById("respuest").innerHTML = est2;
 
   
   }
