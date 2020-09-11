@@ -3,7 +3,7 @@
 function E_1() {
 	ImputText1=document.getElementById("ImputText1").value
 	ImputClave1=document.getElementById("ImputClave").value
-	message =new Paho.MQTT.Message("L10"+" "+ImputText1+" "+ImputClave)
+	message =new Paho.MQTT.Message("L10"+" "+ImputText1+" "+ImputClave1)
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
   
