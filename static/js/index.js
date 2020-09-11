@@ -84,10 +84,18 @@ function ENDEDIDO_2_2() {
 	
 	
 	
+	
 	console.log(text)
+//	document.getElementById("respuesta").innerHTML = text;
+	
+    accion=(msg.payload.decode("utf-8").split(" ")[0])
+	ImputText1=(msg.payload.decode("utf-8").split(" ")[1])
+	document.getElementById("respuesta").innerHTML = accion;
+	document.getElementById("respuest").innerHTML = ImputText1;
+	
 
 
-	document.getElementById("respuesta").innerHTML = text;
+
 
   
   }
