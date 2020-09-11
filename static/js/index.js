@@ -8,25 +8,28 @@ function ENDEDIDO_1() {
   
 }
 function ENDEDIDO_2(){	
-	
-	message =new Paho.MQTT.Message("L1N");
+	ImputText1=document.getElementById("ImputText1").value
+	message =new Paho.MQTT.Message("L1N"+" "+ImputText1);
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
 }
 function ENDEDIDO_1_1() {
-	
-	message =new Paho.MQTT.Message("L2O");
+	ImputText1=document.getElementById("ImputText1").value
+	message =new Paho.MQTT.Message("L2O"+" "+ImputText1);
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
   
 }
 function ENDEDIDO_2_2() {
-	
-	message =new Paho.MQTT.Message("L2N");
+	ImputText1=document.getElementById("ImputText1").value
+	message =new Paho.MQTT.Message("L2N"+" "+ImputText1);
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
   
 }
+
+
+
 
 
 
