@@ -81,11 +81,11 @@ function ENDEDIDO_2_2() {
   // called when a message arrives
   function onMessageArrived(message) {
 	text=(message.payloadString);
-	tex=(message.payloadString);
+	
 	
 	
 	console.log(text)
-	document.getElementById("respuest").innerHTML = tex;
+
 
 	document.getElementById("respuesta").innerHTML = text;
 
