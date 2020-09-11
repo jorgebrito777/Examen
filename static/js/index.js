@@ -77,15 +77,12 @@ function ENDEDIDO_2_2() {
 
   // called when a message arrives
   function onMessageArrived(message) {
-	text=(message.payloadString);
-	console.log(text)
-
-	document.getElementById("respuesta").innerHTML = text;
-
- 
-	//console.log("mensaje del sensor:"+message.payloadString);
-	
-	
+	console.log(message.payloadString);
+	est1=(message.payloadString)split(":")[0];
+	est2=(message.payloadString).split(":")[1];
+	 
+	document.getElementById("respuesta").innerHTML = est1;
+	document.getElementById("respuesta2").innerHTML = est2;
 
   
   }
