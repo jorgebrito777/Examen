@@ -1,26 +1,26 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function ENDEDIDO_1() {
+function E_1() {
 	ImputText1=document.getElementById("ImputText1").value
 	message =new Paho.MQTT.Message("L10"+" "+ImputText1)
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
   
 }
-function ENDEDIDO_2(){	
+function E_2(){	
 	ImputText2=document.getElementById("ImputText1").value
 	message =new Paho.MQTT.Message("L1N"+" "+ImputText2);
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
 }
-function ENDEDIDO_1_1() {
+function E_1_1() {
 	ImputText3=document.getElementById("ImputText1").value
 	message =new Paho.MQTT.Message("L2O"+" "+ImputText3);
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
   
 }
-function ENDEDIDO_2_2() {
+function E_2_2() {
 	ImputText4=document.getElementById("ImputText1").value
 	message =new Paho.MQTT.Message("L2N"+" "+ImputText4);
 	message.destinationName = "jorgebito777@gmail.com/RASP";
