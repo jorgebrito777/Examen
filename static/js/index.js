@@ -79,6 +79,7 @@ function ENDEDIDO_2_2() {
   function onMessageArrived(message) {
 	text=(message.payloadString);
 	console.log(text)
+	document.getElementById("respuest").innerHTML = text;
 
 	document.getElementById("respuesta").innerHTML = text;
 
