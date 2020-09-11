@@ -1,8 +1,8 @@
 //https://www.eclipse.org/paho/clients/js/
 
 function ENDEDIDO_1() {
-	
-	message =new Paho.MQTT.Message("L10");
+	ImputText1=document.getElementById("ImputText1").value
+	message =new Paho.MQTT.Message("L10"+" "+ImputText1)
 	message.destinationName = "jorgebito777@gmail.com/RASP";
 	client.send(message);
   
@@ -82,9 +82,9 @@ function ENDEDIDO_2_2() {
 	
 	
 	console.log(text)
-	document.getElementById("respuest").innerHTML = text;
+	document.getElementById("respuest").innerHTML = tex;
 
-	document.getElementById("respuesta").innerHTML = tex;
+	document.getElementById("respuesta").innerHTML = text;
 
   
   }
