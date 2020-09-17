@@ -84,18 +84,13 @@ function E_2_2() {
 
   // called when a message arrives
   function onMessageArrived(message) {
-	text=(message.payloadString);
+	//text=(message.payloadString);
+	//console.log(text)
+	//document.getElementById("respuesta").innerHTML = text;
+	console.log("Nuevo mensaje:"+message.payloadString); 
+    document.getElementById("respuesta").innerHTML=message.payloadString.split(" ")[0];
+	document.getElementById("respuesta1").innerHTML=message.payloadString.split(" ")[1];
 	
-	
-	
-	
-	console.log(text)
-
-
-	document.getElementById("respuesta").innerHTML = text;
-    
-
-
 
 
   
