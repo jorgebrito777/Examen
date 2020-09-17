@@ -96,9 +96,6 @@ function E_2_2() {
     
 
 
-    document.getElementById("estado").innerHTML=message.payloadString.split(" ")[0];
-	document.getElementById("nivel").innerHTML=message.payloadString.split(" ")[1];
-
 
   
   }
